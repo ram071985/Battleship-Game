@@ -1,0 +1,12 @@
+/Users/reid/Projects/BattleShip/BattleShip/bin/Debug/netcoreapp3.1/BattleShip.deps.json
+/Users/reid/Projects/BattleShip/BattleShip/bin/Debug/netcoreapp3.1/BattleShip.runtimeconfig.json
+/Users/reid/Projects/BattleShip/BattleShip/bin/Debug/netcoreapp3.1/BattleShip.runtimeconfig.dev.json
+/Users/reid/Projects/BattleShip/BattleShip/bin/Debug/netcoreapp3.1/BattleShip.dll
+/Users/reid/Projects/BattleShip/BattleShip/bin/Debug/netcoreapp3.1/BattleShip.pdb
+/Users/reid/Projects/BattleShip/BattleShip/obj/Debug/netcoreapp3.1/BattleShip.csprojAssemblyReference.cache
+/Users/reid/Projects/BattleShip/BattleShip/obj/Debug/netcoreapp3.1/BattleShip.csproj.CoreCompileInputs.cache
+/Users/reid/Projects/BattleShip/BattleShip/obj/Debug/netcoreapp3.1/BattleShip.AssemblyInfoInputs.cache
+/Users/reid/Projects/BattleShip/BattleShip/obj/Debug/netcoreapp3.1/BattleShip.AssemblyInfo.cs
+/Users/reid/Projects/BattleShip/BattleShip/obj/Debug/netcoreapp3.1/BattleShip.dll
+/Users/reid/Projects/BattleShip/BattleShip/obj/Debug/netcoreapp3.1/BattleShip.pdb
+/Users/reid/Projects/BattleShip/BattleShip/obj/Debug/netcoreapp3.1/BattleShip.genruntimeconfig.cache
