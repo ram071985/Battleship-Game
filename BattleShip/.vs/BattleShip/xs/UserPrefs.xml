@@ -1,7 +1,7 @@
-﻿<Properties StartupConfiguration="{994E90CF-0AAF-4A7F-A7A8-0F47B11D3B8D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BattleShip/Program.cs">
+﻿<Properties StartupConfiguration="{9C3EB822-419E-4E2A-8B33-BE822F3CDFFB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="BattleShip/Program.cs" Line="211" Column="48" />
+      <File FileName="Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,9 +18,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint enabled="false" file="/Users/reid/Projects/BattleShip/BattleShip/Program.cs" relfile="BattleShip/Program.cs" line="22" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.BattleShip PreferredExecutionTarget="MonoDevelop.Default" />
