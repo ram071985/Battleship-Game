@@ -58,8 +58,6 @@ namespace BattleShip
             Console.WriteLine();
             Console.WriteLine("You get 8 attempts to fire at the battleship on the grid");
             Console.WriteLine();
-            Console.WriteLine("Round 1 of 8");
-            Console.WriteLine();
 
 
         }
