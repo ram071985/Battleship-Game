@@ -29,6 +29,7 @@ namespace BattleShip
             shipColumn = randomBattleshipColumn.Next(1, 11);
         }
 
+
         static void CalculateHit()
         {
 
@@ -52,7 +53,7 @@ namespace BattleShip
 
 
             }
-            else
+            else if(DidPlayerMissBattleship())
             {
                 Console.WriteLine("You missed the Battleship!");
             }
@@ -76,6 +77,17 @@ namespace BattleShip
                 return true;
             }
             else
+            {
+                return false;
+            }
+        }
+
+        static bool DidPlayerMissBattleship()
+        {
+            if(playerRow != shipRow && playerColumn != shipColumn)
+            {
+                return true;
+            } else
             {
                 return false;
             }
