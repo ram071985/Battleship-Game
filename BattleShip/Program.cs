@@ -56,6 +56,7 @@ namespace BattleShip
             else if(DidPlayerMissBattleship())
             {
                 Console.WriteLine("You missed the Battleship!");
+
             }
         }
 
@@ -105,7 +106,7 @@ namespace BattleShip
 
         static bool IsGameOverDueToDepletedMissiles()
         {
-            if (roundNumber == 9)
+            if (roundNumber == 8)
             {
                 return true;
             }
