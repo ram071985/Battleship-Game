@@ -4,8 +4,8 @@ namespace BattleShip
 {
     class Program
     {
-        static int shipRow = 3;
-        static int shipColumn = 3;
+        static int shipRow;
+        static int shipColumn;
         static int playerRow;
         static int playerColumn;
         static int roundNumber;
@@ -32,19 +32,24 @@ namespace BattleShip
         static void CalculateHit()
         {
 
-            if (isGameOverDueToDepletedMissiles())
+            if (IsGameOverDueToDepletedMissiles())
             {
                 Console.WriteLine("Missiles Depleted");
                 Console.WriteLine();
                 Console.WriteLine("GAME OVER");
                 Environment.Exit(0);
             }
-            else if (isBattleshipHit())
+            else if (IsBattleshipHit())
             {
                 battleshipHits += 1;
                 Console.WriteLine(battleshipHits);
                 Console.WriteLine("You've hit the battleship!");
                 Console.WriteLine();
+                Random randomBattleshipRow = new Random();
+                shipRow = randomBattleshipRow.Next(1, 11);
+                Random randomBattleshipColumn = new Random();
+                shipColumn = randomBattleshipColumn.Next(1, 11);
+
 
             }
             else
@@ -55,7 +60,7 @@ namespace BattleShip
 
         static void PlayerIsWinner()
         {
-             if (isBattleShipHitFiveTimes())
+             if (IsBattleShipHitFiveTimes())
             {
                 Console.WriteLine("CONGRATULATIONS! You've sunk the battleship!");
                 Console.WriteLine();
@@ -64,7 +69,7 @@ namespace BattleShip
             }
         }
 
-        static bool isBattleShipHitFiveTimes()
+        static bool IsBattleShipHitFiveTimes()
         {
             if(battleshipHits == 5)
             {
@@ -76,7 +81,7 @@ namespace BattleShip
             }
         }
 
-        static bool isBattleshipHit()
+        static bool IsBattleshipHit()
         {
             if (playerRow == shipRow && playerColumn == shipColumn)
                 return true;
@@ -86,9 +91,9 @@ namespace BattleShip
             }
         }
 
-        static bool isGameOverDueToDepletedMissiles()
+        static bool IsGameOverDueToDepletedMissiles()
         {
-            if (playerRow != shipRow && playerColumn != shipColumn && roundNumber == 9)
+            if (roundNumber == 9)
             {
                 return true;
             }
