@@ -374,19 +374,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/reid/.nuget/packages/": {}
+    "/Users/R_Chow/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/reid/Projects/BattleShip/BattleShip/BattleShip.csproj",
+      "projectUniqueName": "/Users/R_Chow/Desktop/Battleship-Game/BattleShip/BattleShip.csproj",
       "projectName": "BattleShip",
-      "projectPath": "/Users/reid/Projects/BattleShip/BattleShip/BattleShip.csproj",
-      "packagesPath": "/Users/reid/.nuget/packages/",
-      "outputPath": "/Users/reid/Projects/BattleShip/BattleShip/obj/",
+      "projectPath": "/Users/R_Chow/Desktop/Battleship-Game/BattleShip/BattleShip.csproj",
+      "packagesPath": "/Users/R_Chow/.nuget/packages/",
+      "outputPath": "/Users/R_Chow/Desktop/Battleship-Game/BattleShip/obj/",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/reid/.config/NuGet/NuGet.Config"
+        "/Users/R_Chow/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
