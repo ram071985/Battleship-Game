@@ -136,6 +136,8 @@ namespace BattleShip
                 Console.WriteLine("Round " + i + " of 8");
                 roundNumber = i;
                 Console.WriteLine(roundNumber);
+                Console.WriteLine("Battleship row" + shipRow);
+                Console.WriteLine("Battleship row" + shipColumn);
                 ChooseRowNumber();
                 ChooseColumnNumber();
                 FireAtBattleShip();
