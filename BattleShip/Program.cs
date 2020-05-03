@@ -4,8 +4,8 @@ namespace BattleShip
 {
     class Program
     {
-        static int shipRow;
-        static int shipColumn;
+        static int shipRow = 3;
+        static int shipColumn = 3;
         static int playerRow;
         static int playerColumn;
         static int roundNumber;
@@ -47,25 +47,28 @@ namespace BattleShip
                 Console.WriteLine();
 
             }
-            else if (isBattleshipHitWithFiveMissiles())
-            {
-                Console.WriteLine("CONGRATULATIONS! You've sunk the battleship!");
-                Console.WriteLine();
-                Console.WriteLine("You've Won The Game!");
-            }
             else
             {
                 Console.WriteLine("You missed the Battleship!");
             }
         }
 
-        static bool isBattleshipHitWithFiveMissiles()
+        static void PlayerIsWinner()
         {
-            if (battleshipHits == 5)
+             if (isBattleShipHitFiveTimes())
+            {
+                Console.WriteLine("CONGRATULATIONS! You've sunk the battleship!");
+                Console.WriteLine();
+                Console.WriteLine("You've Won The Game!");
+                Environment.Exit(0);
+            }
+        }
+
+        static bool isBattleShipHitFiveTimes()
+        {
+            if(battleshipHits == 5)
             {
                 return true;
-
-
             }
             else
             {
@@ -119,6 +122,7 @@ namespace BattleShip
                 ChooseColumnNumber();
                 FireAtBattleShip();
                 CalculateHit();
+                PlayerIsWinner();
             }
         }
 
