@@ -19,6 +19,36 @@ namespace BattleShip
 
         }
 
+        public static void StartGame()
+        {
+            BattleshipPosition();
+            Console.WriteLine("Welcome to Battleship!");
+            Console.WriteLine();
+            Console.WriteLine("You get 8 attempts to fire at the battleship on the grid.  5 hits will sink the battleship.");
+            Console.WriteLine();
+
+
+        }
+
+        static void GenerateNewRound()
+        {
+            for (int i = 1; i < 9; i++)
+            {
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine("Round " + i + " of 8");
+                roundNumber = i;
+                Console.WriteLine(roundNumber);
+                Console.WriteLine("Battleship row" + shipRow);
+                Console.WriteLine("Battleship column" + shipColumn);
+                ChooseRowNumber();
+                ChooseColumnNumber();
+                FireAtBattleShip();
+                CalculateHit();
+                PlayerIsWinner();
+            }
+        }
+
 
 
         public static void BattleshipPosition()
@@ -46,10 +76,7 @@ namespace BattleShip
                 Console.WriteLine(battleshipHits);
                 Console.WriteLine("You've hit the battleship!");
                 Console.WriteLine();
-                Random randomBattleshipRow = new Random();
-                shipRow = randomBattleshipRow.Next(1, 11);
-                Random randomBattleshipColumn = new Random();
-                shipColumn = randomBattleshipColumn.Next(1, 11);
+                BattleshipPosition();
 
 
             }
@@ -114,35 +141,6 @@ namespace BattleShip
 
             {
                 return false;
-            }
-        }
-
-        public static void StartGame()
-        {
-            Console.WriteLine("Welcome to Battleship!");
-            Console.WriteLine();
-            Console.WriteLine("You get 8 attempts to fire at the battleship on the grid.  5 hits will sink the battleship.");
-            Console.WriteLine();
-
-
-        }
-
-        static void GenerateNewRound()
-        {
-            for (int i = 1; i < 9; i++)
-            {
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine("Round " + i + " of 8");
-                roundNumber = i;
-                Console.WriteLine(roundNumber);
-                Console.WriteLine("Battleship row" + shipRow);
-                Console.WriteLine("Battleship row" + shipColumn);
-                ChooseRowNumber();
-                ChooseColumnNumber();
-                FireAtBattleShip();
-                CalculateHit();
-                PlayerIsWinner();
             }
         }
 
