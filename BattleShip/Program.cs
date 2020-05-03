@@ -70,14 +70,13 @@ namespace BattleShip
             else if (IsBattleshipHit())
             {
                 battleshipHits += 1;
-                Console.WriteLine(battleshipHits);
                 Console.WriteLine("You've hit the battleship!");
                 Console.WriteLine();
                 BattleshipPosition();
 
 
             }
-            else if(DidPlayerMissBattleship())
+            else
             {
                 Console.WriteLine("You missed the Battleship!");
 
