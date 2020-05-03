@@ -4,72 +4,120 @@ namespace BattleShip
 {
     class Program
     {
-
         static int shipRow;
         static int shipColumn;
         static int playerRow;
         static int playerColumn;
-        static bool roundEight;
+        static int roundNumber;
+        static int battleshipHits;
 
             static void Main(string[] args)
         {
             StartGame();
-            RoundOne();
-            RoundTwo();
-            RoundThree();
-            RoundFour();
-            RoundFive();
-            RoundSix();
-            RoundSeven();
-            RoundEight();
+            GenerateNewRound();
+         
         
         }
 
-        static void CalculateHit()
-        {
-
-            if (playerRow != shipRow && playerColumn != shipColumn)
-            {
-
-                Console.WriteLine("You missed the Battleship!");
-            }
-            else if (playerRow != shipRow && playerColumn != shipColumn && roundEight == true)
-            {
-                Console.WriteLine("You missed the Battleship!");
-                Console.WriteLine();
-                Console.WriteLine("GAME OVER");
-                Environment.Exit(0);
-            }
-            else
-            { 
-
-                Console.WriteLine("You've sunk the battleship!");
-                Console.WriteLine();
-                Console.WriteLine("Congratulations!");
-                Environment.Exit(0);
-            }
-        }
-
-        public static void StartGame()
-        {
-            roundEight = false;
-            BattleShipLogic();
-            Console.WriteLine("Welcome to Battleship!");
-            Console.WriteLine();
-            Console.WriteLine("You get 8 attempts to fire at the battleship on the grid");
-            Console.WriteLine();
-            Console.WriteLine("Round 1 of 8");
-            Console.WriteLine();
 
 
-        }
-        static void BattleShipLogic()
+        public static void BattleshipPosition()
         {
             Random randomBattleshipRow = new Random();
             shipRow = randomBattleshipRow.Next(1, 11);
             Random randomBattleshipColumn = new Random();
             shipColumn = randomBattleshipColumn.Next(1, 11);
         }
+
+        static void CalculateHit()
+        {
+
+           if (isGameOverDueToDepletedMissiles())
+            {
+                Console.WriteLine("Missiles Depleted");
+                Console.WriteLine();
+                Console.WriteLine("GAME OVER");
+                Environment.Exit(0);
+            } else if(isBattleshipHit())
+            {
+                battleshipHits += 1;
+                Console.WriteLine(battleshipHits);
+                Console.WriteLine("You've hit the battleship!");
+                Console.WriteLine();
+            
+            } else if(isBattleshipHitWithFiveMissiles())
+            {
+                Console.WriteLine("CONGRATULATIONS! You've sunk the battleship!");
+                Console.WriteLine();
+                Console.WriteLine("You've Won The Game!");
+            }
+            else
+            {
+                Console.WriteLine("You missed the Battleship!");
+            }
+        }
+
+        static bool isBattleshipHitWithFiveMissiles()
+        {
+            if (battleshipHits == 5)
+            {
+                return true;
+
+                
+            } else
+            {
+                return false;
+            }
+        }
+
+        static bool isBattleshipHit()
+        {
+            if (playerRow == shipRow && playerColumn == shipColumn)
+                return true;
+            else
+            {
+                return false;
+            }
+        }
+
+        static bool isGameOverDueToDepletedMissiles()
+        {
+            if (playerRow != shipRow && playerColumn != shipColumn && roundNumber == 9)
+            {
+                return true;
+            } else
+
+            {
+                return false;
+            }
+        }
+
+        public static void StartGame()
+        {
+            Console.WriteLine("Welcome to Battleship!");
+            Console.WriteLine();
+            Console.WriteLine("You get 8 attempts to fire at the battleship on the grid.  5 hits will sink the battleship.");
+            Console.WriteLine();
+
+
+        }
+
+        static void GenerateNewRound()
+        {
+            for (int i = 1; i < 9; i++)
+            {
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine("Round " + i + " of 8");
+                roundNumber = i;
+                Console.WriteLine(roundNumber);
+                ChooseRowNumber();
+                ChooseColumnNumber();
+                FireAtBattleShip();
+                CalculateHit();
+            }
+        }
+
 
         public static void ChooseRowNumber()
         {
@@ -95,104 +143,6 @@ namespace BattleShip
 
         }
 
-        static void RoundOne()
-        {
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("Round 1 of 8");
-            ChooseRowNumber();
-            ChooseColumnNumber();
-            FireAtBattleShip();
-            CalculateHit();
-           
-        }
-
-        static void RoundTwo()
-        {
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("Round 2 of 8");
-            ChooseRowNumber();
-            ChooseColumnNumber();
-            FireAtBattleShip();
-            CalculateHit();
-
-        }
-
-        static void RoundThree()
-        {
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("Round 3 of 8");
-            ChooseRowNumber();
-            ChooseColumnNumber();
-            FireAtBattleShip();
-            CalculateHit();
-
-        }
-
-        static void RoundFour()
-        {
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("Round 4 of 8");
-            ChooseRowNumber();
-            ChooseColumnNumber();
-            FireAtBattleShip();
-            CalculateHit();
-
-        }
-
-        static void RoundFive()
-        {
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("Round 5 of 8");
-            ChooseRowNumber();
-            ChooseColumnNumber();
-            FireAtBattleShip();
-            CalculateHit();
-
-        }
-
-        static void RoundSix()
-        {
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("Round 6 of 8");
-            ChooseRowNumber();
-            ChooseColumnNumber();
-            FireAtBattleShip();
-            CalculateHit();
-
-        }
-
-
-        private static void RoundSeven()
-        {
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("Round 7 of 8");
-            ChooseRowNumber();
-            ChooseColumnNumber();
-            FireAtBattleShip();
-            CalculateHit();
-
-        }
-
-        private static void RoundEight()
-        {
-            roundEight = true;
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("Round 8 of 8");
-            ChooseRowNumber();
-            ChooseColumnNumber();
-            FireAtBattleShip();
-            CalculateHit();
-
-
-        }
 
 
     }
