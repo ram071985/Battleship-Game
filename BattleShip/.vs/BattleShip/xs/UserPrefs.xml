@@ -1,21 +1,27 @@
 ﻿<Properties StartupConfiguration="{9C3EB822-419E-4E2A-8B33-BE822F3CDFFB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BattleShipTest/BattleshipGridLogic.cs">
     <Files>
-      <File FileName="Program.cs" Line="200" Column="1" />
-      <File FileName="BattleShipLogic.cs" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="72" Column="37" />
+      <File FileName="BattleShipTest/Class1.cs" Line="1" Column="1" />
+      <File FileName="BattleShipTest/BattleshipGridLogic.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BattleShip" expanded="True">
             <Node name="BattleShip" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="BattleShipTest" expanded="True" />
+            </Node>
+            <Node name="BattleShipTest" expanded="True">
+              <Node name="BattleshipGridLogic.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="BattleShip" selected="True" />
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
@@ -25,5 +31,6 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BattleShipTest FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.BattleShip PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
