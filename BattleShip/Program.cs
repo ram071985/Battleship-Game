@@ -4,10 +4,6 @@ namespace BattleShip
 {
     class Program
     {
-        static int shipRow;
-        static int shipColumn;
-        static int playerRow;
-        static int playerColumn;
         static int roundNumber;
         static int battleshipHits;
 
@@ -38,8 +34,8 @@ namespace BattleShip
                 Console.WriteLine();
                 Console.WriteLine("Round " + i + " of 8");
                 roundNumber = i;
-                ChooseRowNumber();
-                ChooseColumnNumber();
+                ChooseRowNumberMessage();
+                ChooseColumnNumberMessage();
                 FireAtBattleShip();
                 CalculateHit();
                 PlayerIsWinner();
@@ -47,111 +43,15 @@ namespace BattleShip
         }
 
 
-
-        public static void BattleshipPosition()
-        {
-            Random randomBattleshipRow = new Random();
-            shipRow = randomBattleshipRow.Next(1, 11);
-            Random randomBattleshipColumn = new Random();
-            shipColumn = randomBattleshipColumn.Next(1, 11);
-        }
-
-
-        static void CalculateHit()
-        {
-
-            if (IsGameOverDueToDepletedMissiles())
-            {
-                Console.WriteLine("Missiles Depleted");
-                Console.WriteLine();
-                Console.WriteLine("GAME OVER");
-                Environment.Exit(0);
-            }
-            else if (IsBattleshipHit())
-            {
-                battleshipHits += 1;
-                Console.WriteLine("You've hit the battleship!");
-                Console.WriteLine();
-                BattleshipPosition();
-
-
-            }
-            else
-            {
-                Console.WriteLine("You missed the Battleship!");
-
-            }
-        }
-
-        static void PlayerIsWinner()
-        {
-             if (IsBattleShipHitFiveTimes())
-            {
-                Console.WriteLine("CONGRATULATIONS! You've sunk the battleship!");
-                Console.WriteLine();
-                Console.WriteLine("You've Won The Game!");
-                Environment.Exit(0);
-            }
-        }
-
-        static bool IsBattleShipHitFiveTimes()
-        {
-            if(battleshipHits == 5)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        static bool DidPlayerMissBattleship()
-        {
-            if(playerRow != shipRow && playerColumn != shipColumn)
-            {
-                return true;
-            } else
-            {
-                return false;
-            }
-        }
-
-        static bool IsBattleshipHit()
-        {
-            if (playerRow == shipRow && playerColumn == shipColumn)
-                return true;
-            else
-            {
-                return false;
-            }
-        }
-
-        static bool IsGameOverDueToDepletedMissiles()
-        {
-            if (roundNumber == 8)
-            {
-                return true;
-            }
-            else
-
-            {
-                return false;
-            }
-        }
-
-
-        public static void ChooseRowNumber()
+        public static void ChooseRowNumberMessage()
         {
             Console.WriteLine("Choose a grid row number between 1 and 10");
-            playerRow = Convert.ToInt32(Console.ReadLine());
         }
 
-        private static void ChooseColumnNumber()
+        private static void ChooseColumnNumberMessage()
         {
             Console.WriteLine();
             Console.WriteLine("Choose a grid column number between 1 and 10");
-            playerColumn = Convert.ToInt32(Console.ReadLine());
 
         }
 
