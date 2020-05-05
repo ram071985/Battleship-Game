@@ -4,25 +4,24 @@ namespace BattleShip
 {
     class Program
     {
-        static int roundNumber;
-        static int battleshipHits;
+        public static int roundNumber;
 
         static void Main(string[] args)
         {
             StartGame();
-            GenerateNewRound();
+            
 
 
         }
 
         public static void StartGame()
         {
-            BattleshipPosition();
+            GameGrid.BattleshipGridPosition();
             Console.WriteLine("Welcome to Battleship!");
             Console.WriteLine();
             Console.WriteLine("You get 8 attempts to fire at the battleship on the grid.  5 hits will sink the battleship.");
             Console.WriteLine();
-
+            GenerateNewRound();
 
         }
 
@@ -37,8 +36,8 @@ namespace BattleShip
                 ChooseRowNumberMessage();
                 ChooseColumnNumberMessage();
                 FireAtBattleShip();
-                CalculateHit();
-                PlayerIsWinner();
+                GameLogic.CalculateHit();
+                GameLogic.PlayerIsWinner();
             }
         }
 

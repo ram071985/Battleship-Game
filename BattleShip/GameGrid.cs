@@ -1,12 +1,12 @@
 ﻿using System;
 namespace BattleShip
 {
-    public class GameLogic
+    public class GameGrid
     {
-        public int shipRow;
-        public int shipColumn;
+        public static int shipRow;
+        public static int shipColumn;
 
-        public void BattleShipGridPosition()
+        public static void BattleshipGridPosition()
         {
             Random randomBattleshipRow = new Random();
             shipRow = randomBattleshipRow.Next(1, 11);

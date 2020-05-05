@@ -3,8 +3,7 @@ namespace BattleShip
 {
     public class GameLogic
     {
-        public int roundNumber;
-        public int battleshipHits;
+        public static int battleshipHits;
 
 
         public static void CalculateHit()
@@ -22,7 +21,7 @@ namespace BattleShip
                 battleshipHits += 1;
                 Console.WriteLine("You've hit the battleship!");
                 Console.WriteLine();
-                BattleshipPosition();
+                GameGrid.BattleshipGridPosition();
 
 
             }
@@ -58,7 +57,7 @@ namespace BattleShip
 
         public static bool DidPlayerMissBattleship()
         {
-            if (playerRow != shipRow && playerColumn != shipColumn)
+            if (PlayerInput.playerRow != GameGrid.shipRow && PlayerInput.playerColumn != GameGrid.shipColumn)
             {
                 return true;
             }
@@ -70,7 +69,7 @@ namespace BattleShip
 
         public static bool IsBattleshipHit()
         {
-            if (playerRow == shipRow && playerColumn == shipColumn)
+            if (PlayerInput.playerRow == GameGrid.shipRow && PlayerInput.playerColumn == GameGrid.shipColumn)
                 return true;
             else
             {
@@ -80,7 +79,7 @@ namespace BattleShip
 
         public static bool IsGameOverDueToDepletedMissiles()
         {
-            if (roundNumber == 8)
+            if (Program.roundNumber == 8)
             {
                 return true;
             }

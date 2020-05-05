@@ -3,8 +3,8 @@ namespace BattleShip
 {
     public class PlayerInput
     {
-        public int playerRow;
-        public int playerColumn;
+        public static int playerRow;
+        public static int playerColumn;
 
         public void ReadPlayerInput()
         {

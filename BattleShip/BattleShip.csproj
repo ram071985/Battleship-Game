@@ -12,5 +12,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.csprojAssemblyReference.cache" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\BattleShipTest.deps.json" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\BattleShipTest.dll" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\BattleShipTest.pdb" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\BattleShipTest.runtimeconfig.dev.json" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\BattleShipTest.runtimeconfig.json" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\nunit.engine.api.dll" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\nunit.engine.dll" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb" />
+    <None Remove="BattleShipTest\obj\BattleShipTest.csproj.nuget.cache" />
+    <None Remove="BattleShipTest\obj\BattleShipTest.csproj.nuget.dgspec.json" />
+    <None Remove="BattleShipTest\obj\BattleShipTest.csproj.nuget.g.props" />
+    <None Remove="BattleShipTest\obj\BattleShipTest.csproj.nuget.g.targets" />
+    <None Remove="BattleShipTest\obj\project.assets.json" />
+    <None Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.AssemblyInfoInputs.cache" />
+    <None Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.assets.cache" />
+    <None Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.csproj.CoreCompileInputs.cache" />
+    <None Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.csproj.FileListAbsolute.txt" />
+    <None Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.dll" />
+    <None Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.genruntimeconfig.cache" />
+    <None Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.pdb" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\nunit_random_seed.tmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="BattleShipTest\BattleshipGridLogic.cs" />
+    <Compile Remove="BattleShipTest\Class1.cs" />
+    <Compile Remove="BattleShipTest\UnitTest1.cs" />
+    <Compile Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.AssemblyInfo.cs" />
   </ItemGroup>
 </Project>
