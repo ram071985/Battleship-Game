@@ -34,11 +34,28 @@
     <None Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.genruntimeconfig.cache" />
     <None Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.pdb" />
     <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\nunit_random_seed.tmp" />
+    <None Remove="BattleshipTests\bin\Debug\netcoreapp2.1\BattleshipTests.deps.json" />
+    <None Remove="BattleshipTests\bin\Debug\netcoreapp2.1\BattleshipTests.dll" />
+    <None Remove="BattleshipTests\obj\BattleshipTests.csproj.nuget.dgspec.json" />
+    <None Remove="BattleshipTests\obj\BattleshipTests.csproj.nuget.g.targets" />
+    <None Remove="BattleshipTests\obj\BattleshipTests.csproj.nuget.g.props" />
+    <None Remove="BattleshipTests\obj\project.assets.json" />
+    <None Remove="BattleshipTests\obj\BattleshipTests.csproj.nuget.cache" />
+    <None Remove="BattleshipTests\obj\Debug\netcoreapp2.1\BattleshipTests.assets.cache" />
+    <None Remove="BattleshipTests\obj\Debug\netcoreapp2.1\BattleshipTests.csprojAssemblyReference.cache" />
+    <None Remove="BattleshipTests\obj\Debug\netcoreapp2.1\BattleshipTests.csproj.CoreCompileInputs.cache" />
+    <None Remove="BattleshipTests\obj\Debug\netcoreapp2.1\BattleshipTests.AssemblyInfoInputs.cache" />
+    <None Remove="BattleshipTests\obj\Debug\netcoreapp2.1\BattleshipTests.dll" />
+    <None Remove="BattleshipTests\obj\Debug\netcoreapp2.1\BattleshipTests.pdb" />
+    <None Remove="BattleshipTests\obj\Debug\netcoreapp2.1\BattleshipTests.csproj.FileListAbsolute.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="BattleShipTest\BattleshipGridLogic.cs" />
     <Compile Remove="BattleShipTest\Class1.cs" />
     <Compile Remove="BattleShipTest\UnitTest1.cs" />
     <Compile Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.AssemblyInfo.cs" />
+    <Compile Remove="BattleshipTests\Class1.cs" />
+    <Compile Remove="BattleshipTests\obj\Debug\netcoreapp2.1\BattleshipTests.AssemblyInfo.cs" />
+    <Compile Remove="BattleshipTests\TestFixtureAttribute.cs" />
   </ItemGroup>
 </Project>

@@ -7,3 +7,7 @@
 /Users/R_Chow/Desktop/Battleship-Game/BattleShip/BattleshipTests/obj/Debug/netcoreapp2.1/BattleshipTests.AssemblyInfo.cs
 /Users/R_Chow/Desktop/Battleship-Game/BattleShip/BattleshipTests/obj/Debug/netcoreapp2.1/BattleshipTests.dll
 /Users/R_Chow/Desktop/Battleship-Game/BattleShip/BattleshipTests/obj/Debug/netcoreapp2.1/BattleshipTests.pdb
+/Users/R_Chow/Desktop/Battleship-Game/BattleShip/BattleshipTests/bin/Debug/netcoreapp2.1/NUnit3.TestAdapter.dll
+/Users/R_Chow/Desktop/Battleship-Game/BattleShip/BattleshipTests/bin/Debug/netcoreapp2.1/NUnit3.TestAdapter.pdb
+/Users/R_Chow/Desktop/Battleship-Game/BattleShip/BattleshipTests/bin/Debug/netcoreapp2.1/nunit.engine.dll
+/Users/R_Chow/Desktop/Battleship-Game/BattleShip/BattleshipTests/bin/Debug/netcoreapp2.1/nunit.engine.api.dll
