@@ -6,10 +6,14 @@ namespace BattleShip
         public static int playerRow;
         public static int playerColumn;
 
-        public void ReadPlayerInput()
+        public static void ReadPlayerRowInput()
         {
             playerRow = Convert.ToInt32(Console.ReadLine());
-            playerColumn = Convert.ToInt32(Console.ReadLine());
+        }
+
+        public static void ReadPlayerColumnInput()
+        {
+           playerColumn = Convert.ToInt32(Console.ReadLine());
         }
     }
 }

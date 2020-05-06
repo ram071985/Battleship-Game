@@ -19,9 +19,12 @@ namespace BattleShip
             else if (IsBattleshipHit())
             {
                 battleshipHits += 1;
+                int howManyHitsLeft = 5 - battleshipHits;
                 Console.WriteLine("You've hit the battleship!");
                 Console.WriteLine();
+                Console.WriteLine("Battleship will sink in " + howManyHitsLeft + " more hits");
                 GameGrid.BattleshipGridPosition();
+
 
 
             }
@@ -89,5 +92,7 @@ namespace BattleShip
                 return false;
             }
         }
+
+    
     }
 }
