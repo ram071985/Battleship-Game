@@ -35,6 +35,16 @@ namespace BattleShip
             }
         }
 
+        public static void TypeErrorHandling()
+        {
+            if (ErrorWrongEntry())
+            {
+                Console.WriteLine();
+                Console.WriteLine("INCORRECT ENTRY.  PLEASE ENTER A NUMBER 1-10. ");
+            }
+        }
+
+
         public static void PlayerIsWinner()
         {
             if (IsBattleShipHitFiveTimes())
@@ -93,6 +103,30 @@ namespace BattleShip
             }
         }
 
-    
+        public static bool ErrorWrongEntry()
+        {
+            if(PlayerInput.playerRow < 1 || PlayerInput.playerRow > 10 || PlayerInput.playerColumn < 1 || PlayerInput.playerColumn > 10)
+            {
+                return true;
+            } else
+            {
+                return false;
+            }
+        }
+
+        public static bool ErrorWrongEntryLetter()
+        {
+            if (PlayerInput.playerRow != 1 || PlayerInput.playerRow > 10 || PlayerInput.playerColumn < 1 || PlayerInput.playerColumn > 10)
+            {
+                return true;
+            } else
+            {
+                return false;
+            }
+        }
+
+
+
+
     }
 }
