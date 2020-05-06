@@ -1,19 +1,19 @@
 ﻿<Properties StartupConfiguration="{9C3EB822-419E-4E2A-8B33-BE822F3CDFFB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="GameGrid.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BattleshipTests/Class1.cs">
     <Files>
-      <File FileName="Program.cs" Line="48" Column="99" />
-      <File FileName="GameLogic.cs" Line="82" Column="42" />
-      <File FileName="GameGrid.cs" Line="1" Column="1" />
-      <File FileName="PlayerInput.cs" Line="9" Column="23" />
+      <File FileName="Program.cs" Line="19" Column="47" />
+      <File FileName="GameLogic.cs" Line="26" Column="51" />
+      <File FileName="GameGrid.cs" />
+      <File FileName="PlayerInput.cs" />
       <File FileName="BattleShipTest/Class1.cs" />
+      <File FileName="BattleshipTests/Class1.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BattleShip" expanded="True">
-            <Node name="BattleShip" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="GameGrid.cs" selected="True" />
+            <Node name="BattleshipTests" expanded="True">
+              <Node name="Class1.cs" selected="True" />
             </Node>
           </Node>
         </State>
