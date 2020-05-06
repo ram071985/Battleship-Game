@@ -9,7 +9,7 @@ namespace BattleShip
         static void Main(string[] args)
         {
             StartGame();
-            
+            GameLogic.TypeErrorHandling();
 
 
         }
@@ -35,6 +35,7 @@ namespace BattleShip
                 roundNumber = i;
                 ChooseRowNumberMessage();
                 PlayerInput.ReadPlayerRowInput();
+                
                 ChooseColumnNumberMessage();
                 PlayerInput.ReadPlayerColumnInput();
                 FireAtBattleShip();
