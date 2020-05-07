@@ -35,12 +35,33 @@ namespace BattleShip
             }
         }
 
-        public static void TypeErrorHandling()
+        public static void PlayerRowEntryHandling()
         {
-            if (ErrorWrongEntry())
+            if (ErrorWrongRowEntry())
             {
                 Console.WriteLine();
                 Console.WriteLine("INCORRECT ENTRY.  PLEASE ENTER A NUMBER 1-10. ");
+                PlayerInput.ReadPlayerRowInput();
+            } else if(ErrorWrongRowEntry() == false)
+            {
+                Program.ChooseColumnNumberMessage();
+                PlayerInput.ReadPlayerColumnInput();
+            }
+        }
+
+        public static void PlayerColumnEntryHandling()
+        {
+            if (ErrorWrongColumnEntry())
+            {
+                Console.WriteLine();
+                Console.WriteLine("INCORRECT ENTRY.  PLEASE ENTER A NUMBER 1-10. ");
+                Program.ChooseColumnNumberMessage();
+                PlayerInput.ReadPlayerColumnInput();
+            }
+            else
+            {
+                Program.ChooseColumnNumberMessage();
+                PlayerInput.ReadPlayerColumnInput();
             }
         }
 
@@ -103,9 +124,10 @@ namespace BattleShip
             }
         }
 
-        public static bool ErrorWrongEntry()
+        public static bool ErrorWrongRowEntry()
         {
-            if(PlayerInput.playerRow < 1 || PlayerInput.playerRow > 10 || PlayerInput.playerColumn < 1 || PlayerInput.playerColumn > 10)
+            
+            if(PlayerInput.playerRow < 1 || PlayerInput.playerRow > 10)
             {
                 return true;
             } else
@@ -114,16 +136,20 @@ namespace BattleShip
             }
         }
 
-        public static bool ErrorWrongEntryLetter()
+        public static bool ErrorWrongColumnEntry()
         {
-            if (PlayerInput.playerRow != 1 || PlayerInput.playerRow > 10 || PlayerInput.playerColumn < 1 || PlayerInput.playerColumn > 10)
+
+            if (PlayerInput.playerColumn < 1 || PlayerInput.playerColumn > 10)
             {
                 return true;
-            } else
+            }
+            else
             {
                 return false;
             }
         }
+
+
 
 
 

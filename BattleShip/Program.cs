@@ -9,7 +9,7 @@ namespace BattleShip
         static void Main(string[] args)
         {
             StartGame();
-            GameLogic.TypeErrorHandling();
+            
 
 
         }
@@ -33,11 +33,7 @@ namespace BattleShip
                 Console.WriteLine();
                 Console.WriteLine("Round " + i + " of 8");
                 roundNumber = i;
-                ChooseRowNumberMessage();
-                PlayerInput.ReadPlayerRowInput();
-                
-                ChooseColumnNumberMessage();
-                PlayerInput.ReadPlayerColumnInput();
+                GameLogic.PlayerRowEntryHandling();
                 FireAtBattleShip();
                 GameLogic.CalculateHit();
                 GameLogic.PlayerIsWinner();
@@ -50,7 +46,7 @@ namespace BattleShip
             Console.WriteLine("Choose a grid row number between 1 and 10");
         }
 
-        private static void ChooseColumnNumberMessage()
+        public static void ChooseColumnNumberMessage()
         {
             Console.WriteLine();
             Console.WriteLine("Choose a grid column number between 1 and 10");
