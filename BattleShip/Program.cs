@@ -8,15 +8,14 @@ namespace BattleShip
 
         static void Main(string[] args)
         {
-            StartGame();
-            
-
-
+            _gameGrid = new _gameGrid();
+            _gameLogic = new GameLogic _gameGrid;
+            StartGame();           
         }
 
         public static void StartGame()
         {
-            GameGrid.BattleshipGridPosition();
+            _gameGrid.BattleshipGridPosition();
             Console.WriteLine("Welcome to Battleship!");
             Console.WriteLine();
             Console.WriteLine("You have 8 attempts to fire at the battleship on the grid.  5 hits will sink the battleship.");
@@ -33,10 +32,10 @@ namespace BattleShip
                 Console.WriteLine();
                 Console.WriteLine("Round " + i + " of 8");
                 roundNumber = i;
-                GameLogic.PlayerRowEntryHandling();
+                _gameLogic.PlayerRowEntryHandling();
                 FireAtBattleShip();
-                GameLogic.CalculateHit();
-                GameLogic.PlayerIsWinner();
+                _gameLogic.CalculateHit();
+                _gameLogic.PlayerIsWinner();
             }
         }
 

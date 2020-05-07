@@ -3,10 +3,15 @@ namespace BattleShip
 {
     public class GameLogic
     {
-        public static int battleshipHits;
+        public int battleshipHits;
+        private GameGrid _gameGrid;
 
+        public GameLogic(GameGrid gameGrid)
+        {
+            _gameGrid = gameGrid;
+        }
 
-        public static void CalculateHit()
+        public void CalculateHit()
         {
 
             if (IsGameOverDueToDepletedMissiles())
@@ -23,7 +28,7 @@ namespace BattleShip
                 Console.WriteLine("You've hit the battleship!");
                 Console.WriteLine();
                 Console.WriteLine("Battleship will sink in " + howManyHitsLeft + " more hits");
-                GameGrid.BattleshipGridPosition();
+                _gameGrid.BattleshipGridPosition();
 
 
 
@@ -35,7 +40,7 @@ namespace BattleShip
             }
         }
 
-        public static void PlayerRowEntryHandling()
+        public void PlayerRowEntryHandling()
         {
             if (ErrorWrongRowEntry())
             {
@@ -49,7 +54,7 @@ namespace BattleShip
             }
         }
 
-        public static void PlayerColumnEntryHandling()
+        public void PlayerColumnEntryHandling()
         {
             if (ErrorWrongColumnEntry())
             {
@@ -66,7 +71,7 @@ namespace BattleShip
         }
 
 
-        public static void PlayerIsWinner()
+        public void PlayerIsWinner()
         {
             if (IsBattleShipHitFiveTimes())
             {
@@ -77,7 +82,7 @@ namespace BattleShip
             }
         }
 
-        public static bool IsBattleShipHitFiveTimes()
+        public bool IsBattleShipHitFiveTimes()
         {
             if (battleshipHits == 5)
             {
@@ -89,9 +94,9 @@ namespace BattleShip
             }
         }
 
-        public static bool DidPlayerMissBattleship()
+        public bool DidPlayerMissBattleship()
         {
-            if (PlayerInput.playerRow != GameGrid.shipRow && PlayerInput.playerColumn != GameGrid.shipColumn)
+            if (PlayerInput.playerRow != _gameGrid.shipRow && PlayerInput.playerColumn != _gameGrid.shipColumn)
             {
                 return true;
             }
@@ -101,9 +106,9 @@ namespace BattleShip
             }
         }
 
-        public static bool IsBattleshipHit()
+        public bool IsBattleshipHit()
         {
-            if (PlayerInput.playerRow == GameGrid.shipRow && PlayerInput.playerColumn == GameGrid.shipColumn)
+            if (PlayerInput.playerRow == _gameGrid.shipRow && PlayerInput.playerColumn == _gameGrid.shipColumn)
                 return true;
             else
             {
@@ -111,7 +116,7 @@ namespace BattleShip
             }
         }
 
-        public static bool IsGameOverDueToDepletedMissiles()
+        public bool IsGameOverDueToDepletedMissiles()
         {
             if (Program.roundNumber == 8)
             {
@@ -124,7 +129,7 @@ namespace BattleShip
             }
         }
 
-        public static bool ErrorWrongRowEntry()
+        public bool ErrorWrongRowEntry()
         {
             
             if(PlayerInput.playerRow < 1 || PlayerInput.playerRow > 10)
@@ -136,7 +141,7 @@ namespace BattleShip
             }
         }
 
-        public static bool ErrorWrongColumnEntry()
+        public bool ErrorWrongColumnEntry()
         {
 
             if (PlayerInput.playerColumn < 1 || PlayerInput.playerColumn > 10)

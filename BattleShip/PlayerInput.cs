@@ -3,17 +3,17 @@ namespace BattleShip
 {
     public class PlayerInput
     {
-        public static int playerRow;
-        public static int playerColumn;
+        public int playerRow;
+        public int playerColumn;
 
-        public static void ReadPlayerRowInput()
+        public void ReadPlayerRowInput()
         {
             playerRow = Convert.ToInt32(Console.ReadLine());
         }
 
-        public static void ReadPlayerColumnInput()
+        public void ReadPlayerColumnInput()
         {
            playerColumn = Convert.ToInt32(Console.ReadLine());
-        }
+        } 
     }
 }
