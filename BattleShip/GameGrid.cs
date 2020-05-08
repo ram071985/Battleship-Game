@@ -1,17 +1,20 @@
 ﻿using System;
 namespace BattleShip
 {
-    public class _gameGrid
+    public class GameGrid
     {
-        public int shipRow;
-        public int shipColumn;
-
-        public void BattleshipGridPosition()
+        public int BattleshipRowPosition()
         {
             Random randomBattleshipRow = new Random();
-            shipRow = randomBattleshipRow.Next(1, 11);
+            var shipRow = randomBattleshipRow.Next(1, 11);
+            return shipRow;
+        }
+
+        public int BattleshipColumnPosition()
+        {
             Random randomBattleshipColumn = new Random();
-            shipColumn = randomBattleshipColumn.Next(1, 11);
+            var shipColumn = randomBattleshipColumn.Next(1, 11);
+            return shipColumn;
         }
     }
 }

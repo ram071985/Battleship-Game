@@ -5,10 +5,12 @@ namespace BattleShip
     {
         public int battleshipHits;
         private GameGrid _gameGrid;
+        private PlayerInput _playerInput;
 
-        public GameLogic(GameGrid gameGrid)
+        public GameLogic(GameGrid gameGrid, PlayerInput playerInput)
         {
             _gameGrid = gameGrid;
+            _playerInput = playerInput;
         }
 
         public void CalculateHit()
@@ -28,10 +30,8 @@ namespace BattleShip
                 Console.WriteLine("You've hit the battleship!");
                 Console.WriteLine();
                 Console.WriteLine("Battleship will sink in " + howManyHitsLeft + " more hits");
-                _gameGrid.BattleshipGridPosition();
-
-
-
+                _gameGrid.BattleshipRowPosition();
+                _gameGrid.BattleshipColumnPosition();
             }
             else
             {
@@ -39,37 +39,6 @@ namespace BattleShip
 
             }
         }
-
-        public void PlayerRowEntryHandling()
-        {
-            if (ErrorWrongRowEntry())
-            {
-                Console.WriteLine();
-                Console.WriteLine("INCORRECT ENTRY.  PLEASE ENTER A NUMBER 1-10. ");
-                PlayerInput.ReadPlayerRowInput();
-            } else if(ErrorWrongRowEntry() == false)
-            {
-                Program.ChooseColumnNumberMessage();
-                PlayerInput.ReadPlayerColumnInput();
-            }
-        }
-
-        public void PlayerColumnEntryHandling()
-        {
-            if (ErrorWrongColumnEntry())
-            {
-                Console.WriteLine();
-                Console.WriteLine("INCORRECT ENTRY.  PLEASE ENTER A NUMBER 1-10. ");
-                Program.ChooseColumnNumberMessage();
-                PlayerInput.ReadPlayerColumnInput();
-            }
-            else
-            {
-                Program.ChooseColumnNumberMessage();
-                PlayerInput.ReadPlayerColumnInput();
-            }
-        }
-
 
         public void PlayerIsWinner()
         {
@@ -94,21 +63,9 @@ namespace BattleShip
             }
         }
 
-        public bool DidPlayerMissBattleship()
-        {
-            if (PlayerInput.playerRow != _gameGrid.shipRow && PlayerInput.playerColumn != _gameGrid.shipColumn)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
         public bool IsBattleshipHit()
         {
-            if (PlayerInput.playerRow == _gameGrid.shipRow && PlayerInput.playerColumn == _gameGrid.shipColumn)
+            if (_playerInput.ReadPlayerRowInput() == _gameGrid.BattleshipRowPosition() && _playerInput.ReadPlayerColumnInput() == _gameGrid.BattleshipColumnPosition())
                 return true;
             else
             {
@@ -128,36 +85,5 @@ namespace BattleShip
                 return false;
             }
         }
-
-        public bool ErrorWrongRowEntry()
-        {
-            
-            if(PlayerInput.playerRow < 1 || PlayerInput.playerRow > 10)
-            {
-                return true;
-            } else
-            {
-                return false;
-            }
-        }
-
-        public bool ErrorWrongColumnEntry()
-        {
-
-            if (PlayerInput.playerColumn < 1 || PlayerInput.playerColumn > 10)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-
-
-
-
-
     }
 }
