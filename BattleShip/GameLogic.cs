@@ -63,9 +63,9 @@ namespace BattleShip
             }
         }
 
-        public bool IsBattleshipHit()
+        public bool IsBattleshipHit(int row, int column)
         {
-            if (_playerInput.ReadPlayerRowInput() == _gameGrid.BattleshipRowPosition() && _playerInput.ReadPlayerColumnInput() == _gameGrid.BattleshipColumnPosition())
+            if (row == _gameGrid.BattleshipRowPosition() && column == _gameGrid.BattleshipColumnPosition())
                 return true;
             else
             {

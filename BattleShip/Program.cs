@@ -38,10 +38,12 @@ namespace BattleShip
                 Console.WriteLine();
                 Console.WriteLine("Round " + i + " of 8");
                 ROUNDNUMBER = i;
+                var row = _playerInput.ReadPlayerRowInput();
+                var column = _playerInput.ReadPlayerColumnInput();
                 _playerInput.ReadPlayerRowInput();
                 _playerInput.ReadPlayerColumnInput();
                 FireAtBattleShip();
-                _gameLogic.CalculateHit();
+                _gameLogic.CalculateHit(row, column);
                 _gameLogic.PlayerIsWinner();
             }
         }

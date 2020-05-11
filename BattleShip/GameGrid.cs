@@ -3,18 +3,15 @@ namespace BattleShip
 {
     public class GameGrid
     {
-        public int BattleshipRowPosition()
+        public int BattleShipRow {get; set; }
+        public int BattleshipColumn {get; set; }
+        public GameGrid()
         {
-            Random randomBattleshipRow = new Random();
-            var shipRow = randomBattleshipRow.Next(1, 11);
-            return shipRow;
-        }
+            var randomBattleshipRow = new Random();
+            BattleShipRow = randomBattleshipRow.Next(1, 11);
 
-        public int BattleshipColumnPosition()
-        {
-            Random randomBattleshipColumn = new Random();
-            var shipColumn = randomBattleshipColumn.Next(1, 11);
-            return shipColumn;
+            var randomBattleshipColumn = new Random();
+            BattleshipColumn = randomBattleshipColumn.Next(1, 11);
         }
     }
 }

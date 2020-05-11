@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{9C3EB822-419E-4E2A-8B33-BE822F3CDFFB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PlayerInput.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GameLogic.cs">
     <Files>
-      <File FileName="Program.cs" Line="42" Column="54" />
-      <File FileName="GameLogic.cs" />
-      <File FileName="PlayerInput.cs" Line="27" Column="10" />
+      <File FileName="Program.cs" Line="47" Column="10" />
+      <File FileName="GameLogic.cs" Line="35" Column="14" />
+      <File FileName="PlayerInput.cs" />
       <File FileName="GameGrid.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
