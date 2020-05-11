@@ -33,7 +33,7 @@ namespace BattleShip
                 _gameGrid.BattleshipRowPosition();
                 _gameGrid.BattleshipColumnPosition();
             }
-            else
+            else if(IsBattleshipHit() == false)
             {
                 Console.WriteLine("You missed the Battleship!");
 

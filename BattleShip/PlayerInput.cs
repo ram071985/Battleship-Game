@@ -7,43 +7,49 @@ namespace BattleShip
         public int ReadPlayerRowInput()
         {
             Console.WriteLine("Choose a grid row number between 1 and 10");
-            var userInput = Convert.ToInt32(Console.ReadLine());
-            if (userInput !=  1 - 10)
+            var isNumber = int.TryParse(Console.ReadLine(), out int userInput);
+            if (isNumber == false)
             {
-                while (userInput != 1 - 10)
+                Console.WriteLine("INVALID ENTRY!");
+                Console.WriteLine("PLEASE ENTER A VALID NUMBER 1-10");
+                userInput = Convert.ToInt32(Console.ReadLine());
+            }
+            if (userInput >= 1 && userInput <= 10)
+            {
+                return userInput;
+            }
+                while (userInput < 1 || userInput > 10)
                 {
                     Console.WriteLine("INVALID ENTRY!");
                     Console.WriteLine("PLEASE ENTER A VALID NUMBER 1-10");
-                    return Convert.ToInt32(Console.ReadLine());
+                    userInput = Convert.ToInt32(Console.ReadLine());
                 }
-                return Convert.ToInt32(Console.ReadLine());
-            }
-            else
-            {
 
                 return userInput;
-            }
         }
 
         public int ReadPlayerColumnInput()
         {
             Console.WriteLine("Choose a grid column number between 1 and 10");
-            var userInput = Convert.ToInt32(Console.ReadLine());
-            if (userInput != 1 - 10)
+            var isNumber = int.TryParse(Console.ReadLine(), out int userInput);
+            if (isNumber == false)
             {
-                while (userInput != 1 - 10)
-                {
-                    Console.WriteLine("INVALID ENTRY!");
-                    Console.WriteLine("PLEASE ENTER A VALID NUMBER 1-10");
-                    return Convert.ToInt32(Console.ReadLine());
-                }
-                return Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("INVALID ENTRY!");
+                Console.WriteLine("PLEASE ENTER A VALID NUMBER 1-10");
+                userInput = Convert.ToInt32(Console.ReadLine());
             }
-            else
+            if (userInput >= 1 && userInput <= 10)
             {
-
                 return userInput;
             }
+            while (userInput < 1 || userInput > 10)
+            {
+                Console.WriteLine("INVALID ENTRY!");
+                Console.WriteLine("PLEASE ENTER A VALID NUMBER 1-10");
+                userInput = Convert.ToInt32(Console.ReadLine());
+            }
+
+            return userInput;
         }
     }
 }

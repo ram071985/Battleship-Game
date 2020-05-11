@@ -46,19 +46,6 @@ namespace BattleShip
             }
         }
 
-
-        public static void ChooseRowNumberMessage()
-        {
-            Console.WriteLine("Choose a grid row number between 1 and 10");
-        }
-
-        public static void ChooseColumnNumberMessage()
-        {
-            Console.WriteLine();
-            Console.WriteLine("Choose a grid column number between 1 and 10");
-
-        }
-
         private static void FireAtBattleShip()
         {
             Console.WriteLine();
