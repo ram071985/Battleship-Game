@@ -20,8 +20,8 @@ namespace BattleShip
 
         public static void StartGame()
         {
-            _gameGrid.BattleshipRowPosition();
-            _gameGrid.BattleshipColumnPosition();
+            _gameGrid.BattleshipRow;
+            _gameGrid.BattleshipColumn;
             Console.WriteLine("Welcome to Battleship!");
             Console.WriteLine();
             Console.WriteLine("You have 8 attempts to fire at the battleship on the grid.  5 hits will sink the battleship.");
@@ -43,7 +43,7 @@ namespace BattleShip
                 _playerInput.ReadPlayerRowInput();
                 _playerInput.ReadPlayerColumnInput();
                 FireAtBattleShip();
-                _gameLogic.CalculateHit(row, column);
+                _gameLogic.CalculateHit();
                 _gameLogic.PlayerIsWinner();
             }
         }

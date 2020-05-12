@@ -30,8 +30,7 @@ namespace BattleShip
                 Console.WriteLine("You've hit the battleship!");
                 Console.WriteLine();
                 Console.WriteLine("Battleship will sink in " + howManyHitsLeft + " more hits");
-                _gameGrid.BattleshipRowPosition();
-                _gameGrid.BattleshipColumnPosition();
+                
             }
             else if(IsBattleshipHit() == false)
             {
@@ -65,7 +64,7 @@ namespace BattleShip
 
         public bool IsBattleshipHit(int row, int column)
         {
-            if (row == _gameGrid.BattleshipRowPosition() && column == _gameGrid.BattleshipColumnPosition())
+            if (row == _gameGrid.BattleshipRow && column == _gameGrid.BattleshipColumn)
                 return true;
             else
             {
