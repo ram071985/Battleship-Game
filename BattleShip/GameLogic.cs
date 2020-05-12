@@ -13,7 +13,7 @@ namespace BattleShip
             _playerInput = playerInput;
         }
 
-        public void CalculateHit()
+        public void CalculateHit(int row, int column)
         {
 
             if (IsGameOverDueToDepletedMissiles())
@@ -23,7 +23,7 @@ namespace BattleShip
                 Console.WriteLine("GAME OVER");
                 Environment.Exit(0);
             }
-            else if (IsBattleshipHit())
+            else if (IsBattleshipHit(row, column))
             {
                 BATTLESHIPHITS += 1;
                 int howManyHitsLeft = 5 - BATTLESHIPHITS;
@@ -32,7 +32,7 @@ namespace BattleShip
                 Console.WriteLine("Battleship will sink in " + howManyHitsLeft + " more hits");
                 
             }
-            else if(IsBattleshipHit() == false)
+            else if(IsBattleshipHit(row, column) == false)
             {
                 Console.WriteLine("You missed the Battleship!");
 
