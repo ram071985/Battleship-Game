@@ -38,8 +38,6 @@ namespace BattleShip
                 ROUNDNUMBER = i;
                 var row = _playerInput.ReadPlayerRowInput();
                 var column = _playerInput.ReadPlayerColumnInput();
-                _playerInput.ReadPlayerRowInput();
-                _playerInput.ReadPlayerColumnInput();
                 FireAtBattleShip();
                 _gameLogic.CalculateHit(row, column);
                 _gameLogic.PlayerIsWinner();

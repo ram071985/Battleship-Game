@@ -10,22 +10,13 @@ namespace BattleShip
             var isNumber = int.TryParse(Console.ReadLine(), out int userInput);
             if (isNumber == false)
             {
-                Console.WriteLine("INVALID ENTRY!");
+                while (userInput < 1 || userInput > 10 && isNumber == false)
+                    Console.WriteLine("INVALID ENTRY!");
                 Console.WriteLine("PLEASE ENTER A VALID NUMBER 1-10");
                 userInput = Convert.ToInt32(Console.ReadLine());
             }
-            if (userInput >= 1 && userInput <= 10)
-            {
-                return userInput;
-            }
-                while (userInput < 1 || userInput > 10)
-                {
-                    Console.WriteLine("INVALID ENTRY!");
-                    Console.WriteLine("PLEASE ENTER A VALID NUMBER 1-10");
-                    userInput = Convert.ToInt32(Console.ReadLine());
-                }
+            return userInput;
 
-                return userInput;
         }
 
         public int ReadPlayerColumnInput()
@@ -34,21 +25,11 @@ namespace BattleShip
             var isNumber = int.TryParse(Console.ReadLine(), out int userInput);
             if (isNumber == false)
             {
-                Console.WriteLine("INVALID ENTRY!");
+                while (userInput < 1 || userInput > 10 && isNumber == false)
+                    Console.WriteLine("INVALID ENTRY!");
                 Console.WriteLine("PLEASE ENTER A VALID NUMBER 1-10");
                 userInput = Convert.ToInt32(Console.ReadLine());
             }
-            if (userInput >= 1 && userInput <= 10)
-            {
-                return userInput;
-            }
-            while (userInput < 1 || userInput > 10)
-            {
-                Console.WriteLine("INVALID ENTRY!");
-                Console.WriteLine("PLEASE ENTER A VALID NUMBER 1-10");
-                userInput = Convert.ToInt32(Console.ReadLine());
-            }
-
             return userInput;
         }
     }

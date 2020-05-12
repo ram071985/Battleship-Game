@@ -9,8 +9,7 @@ namespace BattleShip
         {
             var randomBattleshipRow = new Random();
             BattleshipRow = randomBattleshipRow.Next(1, 11);
-            var randomBattleshipColumn = new Random();
-            BattleshipColumn = randomBattleshipColumn.Next(1, 11);
+            BattleshipColumn = randomBattleshipRow.Next(1, 11);
         }
     }
 }
