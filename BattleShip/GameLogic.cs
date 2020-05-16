@@ -3,9 +3,10 @@ namespace BattleShip
 {
     public class GameLogic
     {
-        public int BATTLESHIPHITS;
+        public int battleshipHits;
         private GameGrid _gameGrid;
         private PlayerInput _playerInput;
+        public int roundNumber;
 
         public GameLogic(GameGrid gameGrid, PlayerInput playerInput)
         {
@@ -25,8 +26,8 @@ namespace BattleShip
             }
             else if (IsBattleshipHit(row, column))
             {
-                BATTLESHIPHITS += 1;
-                int howManyHitsLeft = 5 - BATTLESHIPHITS;
+                battleshipHits += 1;
+                int howManyHitsLeft = 5 - battleshipHits;
                 Console.WriteLine("You've hit the battleship!");
                 Console.WriteLine();
                 Console.WriteLine("Battleship will sink in " + howManyHitsLeft + " more hits");
@@ -52,7 +53,7 @@ namespace BattleShip
 
         public bool IsBattleShipHitFiveTimes()
         {
-            if (BATTLESHIPHITS == 5)
+            if (battleshipHits == 5)
             {
                 return true;
             }
@@ -74,7 +75,7 @@ namespace BattleShip
 
         public bool IsGameOverDueToDepletedMissiles()
         {
-            if (Program.ROUNDNUMBER == 8)
+            if (roundNumber == 8)
             {
                 return true;
             }

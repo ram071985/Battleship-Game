@@ -4,10 +4,10 @@
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/R_Chow/.nuget/packages/</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/R_Chow/.nuget/packages/;/usr/local/share/dotnet/sdk/NuGetFallbackFolder</NuGetPackageFolders>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/reid/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/reid/.nuget/packages/</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.3.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.4.0</NuGetToolVersion>
   </PropertyGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -16,11 +16,11 @@
     <Import Project="$(NuGetPackageRoot)nunit/3.12.0/build/NUnit.props" Condition="Exists('$(NuGetPackageRoot)nunit/3.12.0/build/NUnit.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgNUnit_Extension_VSProjectLoader Condition=" '$(PkgNUnit_Extension_VSProjectLoader)' == '' ">/Users/R_Chow/.nuget/packages/nunit.extension.vsprojectloader/3.8.0</PkgNUnit_Extension_VSProjectLoader>
-    <PkgNUnit_Extension_TeamCityEventListener Condition=" '$(PkgNUnit_Extension_TeamCityEventListener)' == '' ">/Users/R_Chow/.nuget/packages/nunit.extension.teamcityeventlistener/1.0.7</PkgNUnit_Extension_TeamCityEventListener>
-    <PkgNUnit_Extension_NUnitV2ResultWriter Condition=" '$(PkgNUnit_Extension_NUnitV2ResultWriter)' == '' ">/Users/R_Chow/.nuget/packages/nunit.extension.nunitv2resultwriter/3.6.0</PkgNUnit_Extension_NUnitV2ResultWriter>
-    <PkgNUnit_Extension_NUnitV2Driver Condition=" '$(PkgNUnit_Extension_NUnitV2Driver)' == '' ">/Users/R_Chow/.nuget/packages/nunit.extension.nunitv2driver/3.8.0</PkgNUnit_Extension_NUnitV2Driver>
-    <PkgNUnit_Extension_NUnitProjectLoader Condition=" '$(PkgNUnit_Extension_NUnitProjectLoader)' == '' ">/Users/R_Chow/.nuget/packages/nunit.extension.nunitprojectloader/3.6.0</PkgNUnit_Extension_NUnitProjectLoader>
-    <PkgNUnit_ConsoleRunner Condition=" '$(PkgNUnit_ConsoleRunner)' == '' ">/Users/R_Chow/.nuget/packages/nunit.consolerunner/3.11.1</PkgNUnit_ConsoleRunner>
+    <PkgNUnit_Extension_VSProjectLoader Condition=" '$(PkgNUnit_Extension_VSProjectLoader)' == '' ">/Users/reid/.nuget/packages/nunit.extension.vsprojectloader/3.8.0</PkgNUnit_Extension_VSProjectLoader>
+    <PkgNUnit_Extension_TeamCityEventListener Condition=" '$(PkgNUnit_Extension_TeamCityEventListener)' == '' ">/Users/reid/.nuget/packages/nunit.extension.teamcityeventlistener/1.0.7</PkgNUnit_Extension_TeamCityEventListener>
+    <PkgNUnit_Extension_NUnitV2ResultWriter Condition=" '$(PkgNUnit_Extension_NUnitV2ResultWriter)' == '' ">/Users/reid/.nuget/packages/nunit.extension.nunitv2resultwriter/3.6.0</PkgNUnit_Extension_NUnitV2ResultWriter>
+    <PkgNUnit_Extension_NUnitV2Driver Condition=" '$(PkgNUnit_Extension_NUnitV2Driver)' == '' ">/Users/reid/.nuget/packages/nunit.extension.nunitv2driver/3.8.0</PkgNUnit_Extension_NUnitV2Driver>
+    <PkgNUnit_Extension_NUnitProjectLoader Condition=" '$(PkgNUnit_Extension_NUnitProjectLoader)' == '' ">/Users/reid/.nuget/packages/nunit.extension.nunitprojectloader/3.6.0</PkgNUnit_Extension_NUnitProjectLoader>
+    <PkgNUnit_ConsoleRunner Condition=" '$(PkgNUnit_ConsoleRunner)' == '' ">/Users/reid/.nuget/packages/nunit.consolerunner/3.11.1</PkgNUnit_ConsoleRunner>
   </PropertyGroup>
 </Project>

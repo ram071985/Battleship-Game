@@ -24,3 +24,15 @@
 /Users/R_Chow/Desktop/Battleship-Game/BattleShip/obj/Debug/netcoreapp3.1/BattleShip.dll
 /Users/R_Chow/Desktop/Battleship-Game/BattleShip/obj/Debug/netcoreapp3.1/BattleShip.pdb
 /Users/R_Chow/Desktop/Battleship-Game/BattleShip/obj/Debug/netcoreapp3.1/BattleShip.genruntimeconfig.cache
+/Users/reid/Desktop/Projects/Battleship-Game/BattleShip/obj/Debug/netcoreapp3.1/BattleShip.csprojAssemblyReference.cache
+/Users/reid/Desktop/Projects/Battleship-Game/BattleShip/obj/Debug/netcoreapp3.1/BattleShip.csproj.CoreCompileInputs.cache
+/Users/reid/Desktop/Projects/Battleship-Game/BattleShip/obj/Debug/netcoreapp3.1/BattleShip.dll
+/Users/reid/Desktop/Projects/Battleship-Game/BattleShip/obj/Debug/netcoreapp3.1/BattleShip.pdb
+/Users/reid/Desktop/Projects/Battleship-Game/BattleShip/bin/Debug/netcoreapp3.1/BattleShip.deps.json
+/Users/reid/Desktop/Projects/Battleship-Game/BattleShip/bin/Debug/netcoreapp3.1/BattleShip.runtimeconfig.json
+/Users/reid/Desktop/Projects/Battleship-Game/BattleShip/bin/Debug/netcoreapp3.1/BattleShip.runtimeconfig.dev.json
+/Users/reid/Desktop/Projects/Battleship-Game/BattleShip/bin/Debug/netcoreapp3.1/BattleShip.dll
+/Users/reid/Desktop/Projects/Battleship-Game/BattleShip/bin/Debug/netcoreapp3.1/BattleShip.pdb
+/Users/reid/Desktop/Projects/Battleship-Game/BattleShip/bin/Debug/netcoreapp3.1/nunit.framework.dll
+/Users/reid/Desktop/Projects/Battleship-Game/BattleShip/obj/Debug/netcoreapp3.1/BattleShip.csproj.CopyComplete
+/Users/reid/Desktop/Projects/Battleship-Game/BattleShip/obj/Debug/netcoreapp3.1/BattleShip.genruntimeconfig.cache

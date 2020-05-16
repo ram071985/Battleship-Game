@@ -4,7 +4,6 @@ namespace BattleShip
 {
     class Program
     {
-        public static int ROUNDNUMBER;
         private static GameGrid _gameGrid;
         private static GameLogic _gameLogic;
         private static PlayerInput _playerInput;
@@ -35,7 +34,7 @@ namespace BattleShip
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine("Round " + i + " of 8");
-                ROUNDNUMBER = i;
+                _gameLogic.roundNumber = i;
                 var row = _playerInput.ReadPlayerRowInput();
                 var column = _playerInput.ReadPlayerColumnInput();
                 FireAtBattleShip();
