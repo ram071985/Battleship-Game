@@ -1,21 +1,20 @@
 ﻿<Properties StartupConfiguration="{9C3EB822-419E-4E2A-8B33-BE822F3CDFFB}|Default">
-  <MonoDevelop.Ide.ItemProperties.BattleshipTests FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../private/var/folders/wl/9htq29_j7qj_m6c8kzsrdm240000gn/T/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BattleshipTests/GameLogicTests.cs">
     <Files>
-      <File FileName="Program.cs" Line="37" Column="44" />
-      <File FileName="GameLogic.cs" Line="78" Column="34" />
-      <File FileName="GameGrid.cs" Line="1" Column="1" />
-      <File FileName="PlayerInput.cs" Line="23" Column="52" />
+      <File FileName="Program.cs" Line="42" Column="45" />
+      <File FileName="GameLogic.cs" />
+      <File FileName="GameGrid.cs" />
+      <File FileName="PlayerInput.cs" />
       <File FileName="BattleshipTests/GameLogicTests.cs" Line="33" Column="36" />
-      <File FileName="BattleShip.csproj" Line="6" Column="53" />
-      <File FileName="../../../../../../var/folders/wl/9htq29_j7qj_m6c8kzsrdm240000gn/T/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" Line="4" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BattleShip" expanded="True">
             <Node name="BattleShip" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="BattleshipTests" expanded="True">
+                <Node name="GameLogicTests.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="BattleshipTests" expanded="True" />
           </Node>
