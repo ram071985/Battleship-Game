@@ -2,8 +2,7 @@
 using BattleShip;
 using NUnit.Framework;
 
-namespace Battleship.Tests
-
+namespace BattleshipTests
 {
     [TestFixture]
     public class GameLogicTests
