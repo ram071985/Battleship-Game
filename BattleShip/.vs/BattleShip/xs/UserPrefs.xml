@@ -1,29 +1,31 @@
 ﻿<Properties StartupConfiguration="{9C3EB822-419E-4E2A-8B33-BE822F3CDFFB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BattleshipTests/GameLogicTests.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Battleship.Tests/EmptyClass.cs">
     <Files>
-      <File FileName="Program.cs" Line="42" Column="45" />
+      <File FileName="Program.cs" Line="18" Column="10" />
       <File FileName="GameLogic.cs" />
       <File FileName="GameGrid.cs" />
       <File FileName="PlayerInput.cs" />
-      <File FileName="BattleshipTests/GameLogicTests.cs" Line="33" Column="36" />
+      <File FileName="Battleship.Tests/EmptyClass.cs" Line="3" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BattleShip" expanded="True">
-            <Node name="BattleShip" expanded="True">
-              <Node name="BattleshipTests" expanded="True">
-                <Node name="GameLogicTests.cs" selected="True" />
-              </Node>
+            <Node name="BattleShip" expanded="True" />
+            <Node name="Battleship.Tests" expanded="True">
+              <Node name="EmptyClass.cs" selected="True" />
             </Node>
-            <Node name="BattleshipTests" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>BattleshipTests/BattleshipTests.csproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Battleship.Tests FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
