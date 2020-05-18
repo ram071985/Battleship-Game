@@ -14,6 +14,7 @@ namespace BattleShip
             _gameGrid = new GameGrid();
             _playerInput = new PlayerInput();
             _gameLogic = new GameLogic(_gameGrid, _playerInput);
+         
             StartGame();           
         }
 

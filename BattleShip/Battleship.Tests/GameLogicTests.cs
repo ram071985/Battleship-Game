@@ -28,6 +28,10 @@ namespace BattleshipTests
         [Test]
         public void should_is_game_over_due_to_depleted_missiles_return_false()
         {
+            var gameGrid = new GameGrid();
+            var playerInput = new PlayerInput();
+
+            _gameLogic = new GameLogic(gameGrid, playerInput);
             _gameLogic.roundNumber = 0;
             var result = _gameLogic.IsGameOverDueToDepletedMissiles();
             Assert.IsFalse(result);

@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{9C3EB822-419E-4E2A-8B33-BE822F3CDFFB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Battleship.Tests/GameLogicTests.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="18" Column="10" />
+      <File FileName="Program.cs" Line="33" Column="14" />
       <File FileName="GameLogic.cs" />
+      <File FileName="Battleship.Tests/GameLogicTests.cs" />
       <File FileName="GameGrid.cs" />
       <File FileName="PlayerInput.cs" />
-      <File FileName="Battleship.Tests/GameLogicTests.cs" Line="36" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,8 +13,9 @@
           <Node name="BattleShip" expanded="True">
             <Node name="BattleShip" expanded="True">
               <Node name="Battleship.Tests" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
-            <Node name="Battleship.Tests" selected="True" />
+            <Node name="Battleship.Tests" expanded="True" />
           </Node>
         </State>
       </Pad>

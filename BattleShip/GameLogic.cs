@@ -31,6 +31,7 @@ namespace BattleShip
                 Console.WriteLine("You've hit the battleship!");
                 Console.WriteLine();
                 Console.WriteLine("Battleship will sink in " + howManyHitsLeft + " more hits");
+                _gameGrid = new GameGrid();
                 
             }
             else if(IsBattleshipHit(row, column) == false)
