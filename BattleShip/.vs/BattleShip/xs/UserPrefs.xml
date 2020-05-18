@@ -4,17 +4,17 @@
       <File FileName="Program.cs" Line="18" Column="10" />
       <File FileName="GameLogic.cs" />
       <File FileName="GameGrid.cs" />
-      <File FileName="PlayerInput.cs" Line="1" Column="1" />
-      <File FileName="Battleship.Tests/GameLogicTests.cs" Line="1" Column="1" />
+      <File FileName="PlayerInput.cs" />
+      <File FileName="Battleship.Tests/GameLogicTests.cs" Line="36" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BattleShip" expanded="True">
-            <Node name="BattleShip" expanded="True" />
-            <Node name="Battleship.Tests" expanded="True">
-              <Node name="GameLogicTests.cs" selected="True" />
+            <Node name="BattleShip" expanded="True">
+              <Node name="Battleship.Tests" expanded="True" />
             </Node>
+            <Node name="Battleship.Tests" selected="True" />
           </Node>
         </State>
       </Pad>
@@ -23,10 +23,8 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <DisabledProjects>
     <String>BattleshipTests/BattleshipTests.csproj</String>
-    <String>Battleship.Tests/Battleship.Tests.csproj</String>
   </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Battleship.Tests FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
