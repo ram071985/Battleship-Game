@@ -1,29 +1,22 @@
 ﻿<Properties StartupConfiguration="{9C3EB822-419E-4E2A-8B33-BE822F3CDFFB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Battleship.Tests/GameLogicTests.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Battleship.Tests/BattleshipGridTest.cs">
     <Files>
       <File FileName="Program.cs" Line="15" Column="46" />
-      <File FileName="GameLogic.cs" Line="36" Column="14" />
-      <File FileName="Battleship.Tests/GameLogicTests.cs" Line="61" Column="8" />
-      <File FileName="GameGrid.cs" Line="6" Column="34" />
-      <File FileName="PlayerInput.cs" Line="1" Column="1" />
-      <File FileName="Battleship.Tests/BattleshipGridTest.cs" Line="1" Column="1" />
+      <File FileName="GameLogic.cs" />
+      <File FileName="Battleship.Tests/GameLogicTests.cs" />
+      <File FileName="Battleship.Tests/BattleshipGridTest.cs" Line="22" Column="38" />
+      <File FileName="GameGrid.cs" />
+      <File FileName="PlayerInput.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BattleShip" expanded="True">
             <Node name="BattleShip" expanded="True">
-              <Node name="Battleship.Tests" expanded="True" />
+              <Node name="Battleship.Tests" expanded="True">
+                <Node name="BattleshipGridTest.cs" selected="True" />
+              </Node>
             </Node>
-            <Node name="Battleship.Tests" expanded="True">
-              <Node name="GameLogicTests.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="BattleShip" expanded="True" selected="True">
             <Node name="Battleship.Tests" expanded="True" />
           </Node>
         </State>
