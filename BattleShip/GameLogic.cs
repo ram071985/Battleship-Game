@@ -66,7 +66,7 @@ namespace BattleShip
 
         public bool IsBattleshipHit(int row, int column)
         {
-            if (row == _gameGrid.BattleshipRow && column == _gameGrid.BattleshipColumn)
+            if (row == _gameGrid.battleshipRow && column == _gameGrid.battleshipColumn)
                 return true;
             else
             {
