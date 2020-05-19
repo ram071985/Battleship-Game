@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "/Users/R_Chow/Desktop/Battleship-Game/BattleShip/BattleShip.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "/Users/R_Chow/Desktop/Battleship-Game/BattleShip/BattleShip.csproj",
         "packagesPath": "/Users/R_Chow/.nuget/packages/",
         "outputPath": "/Users/R_Chow/Desktop/Battleship-Game/BattleShip/obj/",
+=======
+    "/Users/reid/Desktop/Projects/Battleship-Game/BattleShip/BattleShip.csproj": {}
+  },
+  "projects": {
+    "/Users/reid/Desktop/Projects/Battleship-Game/BattleShip/BattleShip.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/reid/Desktop/Projects/Battleship-Game/BattleShip/BattleShip.csproj",
+        "projectName": "BattleShip",
+        "projectPath": "/Users/reid/Desktop/Projects/Battleship-Game/BattleShip/BattleShip.csproj",
+        "packagesPath": "/Users/reid/.nuget/packages/",
+        "outputPath": "/Users/reid/Desktop/Projects/Battleship-Game/BattleShip/obj/",
+>>>>>>> week-three
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -38,6 +52,20 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit.Console": {
+              "target": "Package",
+              "version": "[3.11.1, )"
+            },
+            "NUnit.ConsoleRunner": {
+              "target": "Package",
+              "version": "[3.11.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -53,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.202/RuntimeIdentifierGraph.json"
         }
       }
     }

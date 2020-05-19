@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 
 namespace BattleShip
@@ -16,9 +17,20 @@ namespace BattleShip
             StartGame();
             GenerateNewRound();
          
-        
-        }
+=======
+﻿using System;
 
+namespace BattleShip
+{
+    class Program
+    {
+        private static GameGrid _gameGrid;
+        private static GameLogic _gameLogic;
+        private static PlayerInput _playerInput;
+>>>>>>> week-three
+        
+
+<<<<<<< HEAD
 
 
         public static void BattleshipPosition()
@@ -90,12 +102,22 @@ namespace BattleShip
             {
                 return false;
             }
+=======
+        static void Main(string[] args)
+        {
+            _gameGrid = new GameGrid();
+            _playerInput = new PlayerInput();
+            _gameLogic = new GameLogic(_gameGrid, _playerInput);
+         
+            StartGame();           
+>>>>>>> week-three
         }
 
         public static void StartGame()
         {
             Console.WriteLine("Welcome to Battleship!");
             Console.WriteLine();
+<<<<<<< HEAD
             Console.WriteLine("You get 8 attempts to fire at the battleship on the grid.  5 hits will sink the battleship.");
             Console.WriteLine();
 
@@ -120,17 +142,28 @@ namespace BattleShip
 
 
         public static void ChooseRowNumber()
-        {
-            Console.WriteLine("Choose a grid row number between 1 and 10");
-            playerRow = Convert.ToInt32(Console.ReadLine());
-        }   
-
-        private static void ChooseColumnNumber()
-        {
+=======
+            Console.WriteLine("You have 8 attempts to fire at the battleship on the grid.  5 hits will sink the battleship.");
             Console.WriteLine();
-            Console.WriteLine("Choose a grid column number between 1 and 10");
-            playerColumn = Convert.ToInt32(Console.ReadLine());
+            GenerateNewRound();
 
+        }
+
+        static void GenerateNewRound()
+>>>>>>> week-three
+        {
+            for (int i = 1; i < 9; i++)
+            {
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine("Round " + i + " of 8");
+                _gameLogic.roundNumber = i;
+                var row = _playerInput.ReadPlayerRowInput();
+                var column = _playerInput.ReadPlayerColumnInput();
+                FireAtBattleShip();
+                _gameLogic.CalculateHit(row, column);
+                _gameLogic.PlayerIsWinner();
+            }
         }
 
         private static void FireAtBattleShip()
@@ -143,9 +176,12 @@ namespace BattleShip
 
         }
 
+<<<<<<< HEAD
+=======
 
 
     }
+>>>>>>> week-three
 
-  
+
 }

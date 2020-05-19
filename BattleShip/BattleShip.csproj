@@ -3,9 +3,64 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Remove="PlayerLogic.cs" />
+=======
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit.Console" Version="3.11.1" />
+    <PackageReference Include="NUnit.ConsoleRunner" Version="3.11.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.csprojAssemblyReference.cache" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\BattleShipTest.deps.json" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\BattleShipTest.dll" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\BattleShipTest.pdb" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\BattleShipTest.runtimeconfig.dev.json" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\BattleShipTest.runtimeconfig.json" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\nunit.engine.api.dll" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\nunit.engine.dll" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb" />
+    <None Remove="BattleShipTest\obj\BattleShipTest.csproj.nuget.cache" />
+    <None Remove="BattleShipTest\obj\BattleShipTest.csproj.nuget.dgspec.json" />
+    <None Remove="BattleShipTest\obj\BattleShipTest.csproj.nuget.g.props" />
+    <None Remove="BattleShipTest\obj\BattleShipTest.csproj.nuget.g.targets" />
+    <None Remove="BattleShipTest\obj\project.assets.json" />
+    <None Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.AssemblyInfoInputs.cache" />
+    <None Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.assets.cache" />
+    <None Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.csproj.CoreCompileInputs.cache" />
+    <None Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.csproj.FileListAbsolute.txt" />
+    <None Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.dll" />
+    <None Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.genruntimeconfig.cache" />
+    <None Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.pdb" />
+    <None Remove="BattleShipTest\bin\Debug\netcoreapp2.1\nunit_random_seed.tmp" />
+    <None Remove="BattleshipTests\bin\Debug\netcoreapp2.1\BattleshipTests.deps.json" />
+    <None Remove="BattleshipTests\bin\Debug\netcoreapp2.1\BattleshipTests.dll" />
+    <None Remove="BattleshipTests\obj\BattleshipTests.csproj.nuget.dgspec.json" />
+    <None Remove="BattleshipTests\obj\BattleshipTests.csproj.nuget.g.targets" />
+    <None Remove="BattleshipTests\obj\BattleshipTests.csproj.nuget.g.props" />
+    <None Remove="BattleshipTests\obj\project.assets.json" />
+    <None Remove="BattleshipTests\obj\BattleshipTests.csproj.nuget.cache" />
+    <None Remove="BattleshipTests\obj\Debug\netcoreapp2.1\BattleshipTests.assets.cache" />
+    <None Remove="BattleshipTests\obj\Debug\netcoreapp2.1\BattleshipTests.csprojAssemblyReference.cache" />
+    <None Remove="BattleshipTests\obj\Debug\netcoreapp2.1\BattleshipTests.csproj.CoreCompileInputs.cache" />
+    <None Remove="BattleshipTests\obj\Debug\netcoreapp2.1\BattleshipTests.AssemblyInfoInputs.cache" />
+    <None Remove="BattleshipTests\obj\Debug\netcoreapp2.1\BattleshipTests.dll" />
+    <None Remove="BattleshipTests\obj\Debug\netcoreapp2.1\BattleshipTests.pdb" />
+    <None Remove="BattleshipTests\obj\Debug\netcoreapp2.1\BattleshipTests.csproj.FileListAbsolute.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="BattleShipTest\BattleshipGridLogic.cs" />
+    <Compile Remove="BattleShipTest\Class1.cs" />
+    <Compile Remove="BattleShipTest\UnitTest1.cs" />
+    <Compile Remove="BattleShipTest\obj\Debug\netcoreapp2.1\BattleShipTest.AssemblyInfo.cs" />
+    <Compile Remove="BattleshipTests\Class1.cs" />
+    <Compile Remove="BattleshipTests\obj\Debug\netcoreapp2.1\BattleshipTests.AssemblyInfo.cs" />
+    <Compile Remove="BattleshipTests\TestFixtureAttribute.cs" />
+>>>>>>> week-three
   </ItemGroup>
 </Project>
