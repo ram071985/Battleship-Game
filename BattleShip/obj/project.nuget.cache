@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CyHO5kV1z1B/D91MFEaVSnDVG/lLvBkko7d2sc2vZ3dzFJjAxsnrF24f5WvYVuiQseh0Z9TNzm3z4/hdUcUofQ==",
+  "dgSpecHash": "UqaDd1QBwhB4nX2yjD94w9nCKTJ5mhdWejw9i5lgAfd6Cd3afhJ4M3LqJYhyRirKnYk2ThNO71RRfiNfehpOFg==",
   "success": true,
-  "projectFilePath": "/Users/reid/Desktop/Projects/Battleship-Game/BattleShip/BattleShip.csproj",
+  "projectFilePath": "/Users/reid/Desktop/Battleship-Game/BattleShip/BattleShip.csproj",
   "expectedPackageFiles": [
     "/Users/reid/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/Users/reid/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512",
