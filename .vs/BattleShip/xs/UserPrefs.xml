@@ -1,16 +1,9 @@
-﻿<Properties StartupConfiguration="{994E90CF-0AAF-4A7F-A7A8-0F47B11D3B8D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BattleShip/Program.cs">
-    <Files>
-      <File FileName="BattleShip/Program.cs" Line="211" Column="48" />
-    </Files>
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BattleShip" expanded="True">
-            <Node name="BattleShip" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
-          </Node>
+          <Node name="BattleShip" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
@@ -19,7 +12,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint enabled="false" file="/Users/reid/Projects/BattleShip/BattleShip/Program.cs" relfile="BattleShip/Program.cs" line="22" column="1" />
+      <Breakpoint enabled="false" file="/Users/reid/Desktop/Battleship-Game/BattleShip/Program.cs" relfile="BattleShip/Program.cs" line="22" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

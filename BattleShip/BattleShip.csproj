@@ -7,9 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Remove="PlayerLogic.cs" />
-=======
     <PackageReference Include="NUnit" Version="3.12.0" />
     <PackageReference Include="NUnit.Console" Version="3.11.1" />
     <PackageReference Include="NUnit.ConsoleRunner" Version="3.11.1" />
@@ -61,6 +58,5 @@
     <Compile Remove="BattleshipTests\Class1.cs" />
     <Compile Remove="BattleshipTests\obj\Debug\netcoreapp2.1\BattleshipTests.AssemblyInfo.cs" />
     <Compile Remove="BattleshipTests\TestFixtureAttribute.cs" />
->>>>>>> week-three
   </ItemGroup>
 </Project>

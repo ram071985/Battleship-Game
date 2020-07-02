@@ -1,16 +1,18 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="188" Column="1" />
-      <File FileName="GameLogic.cs" Line="59" Column="29" />
-      <File FileName="Battleship.Tests/GameLogicTests.cs" Line="5" Column="27" />
-      <File FileName="Battleship.Tests/BattleshipGridTest.cs" Line="38" Column="2" />
+      <File FileName="Program.cs" Line="20" Column="5" />
+      <File FileName="GameLogic.cs" />
+      <File FileName="Battleship.Tests/GameLogicTests.cs" />
+      <File FileName="Battleship.Tests/BattleshipGridTest.cs" />
       <File FileName="GameGrid.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BattleShip" expanded="True" selected="True" />
+          <Node name="BattleShip" expanded="True">
+            <Node name="BattleShip" selected="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>
@@ -25,5 +27,4 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.BattleShip PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

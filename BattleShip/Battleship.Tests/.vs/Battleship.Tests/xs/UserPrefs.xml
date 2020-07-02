@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{3B3842F4-78B5-4A93-9010-8F28F7DFE555}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GameLogicTests.cs">
+    <Files>
+      <File FileName="BattleshipGridTest.cs" Line="1" Column="1" />
+      <File FileName="GameLogicTests.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Battleship.Tests" expanded="True">
+            <Node name="Battleship.Tests" expanded="True">
+              <Node name="GameLogicTests.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Battleship.Tests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
