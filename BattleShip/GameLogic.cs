@@ -14,8 +14,6 @@ namespace BattleShip
             _gameMessageService = gameMessageService;
         }
 
-  
-
         public void PlayerIsWinner()
         {
             if (IsBattleShipHitFiveTimes())
@@ -29,37 +27,19 @@ namespace BattleShip
 
         public bool IsBattleShipHitFiveTimes()
         {
-            if (battleshipHits == 5)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return battleshipHits == 5;
+           
         }
 
         public bool IsBattleshipHit(int row, int column)
         {
-            if (row == _gameGrid.battleshipRow && column == _gameGrid.battleshipColumn)
-                return true;
-            else
-            {
-                return false;
-            }
+            return row == _gameGrid.battleshipRow && column == _gameGrid.battleshipColumn;
         }
 
         public bool IsGameOverDueToDepletedMissiles()
         {
-            if (roundNumber == 8)
-            {
-                return true;
-            }
-            else
-
-            {
-                return false;
-            }
+            return roundNumber == 8;
+           
         }
     }
 }
