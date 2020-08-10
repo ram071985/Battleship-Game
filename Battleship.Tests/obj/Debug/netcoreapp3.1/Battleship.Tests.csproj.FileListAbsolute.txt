@@ -194,3 +194,9 @@
 /Users/reid/Desktop/Battleship-Game/BattleShip/Battleship.Tests/obj/Debug/netcoreapp3.1/Battleship.Tests.csproj.CoreCompileInputs.cache
 /Users/reid/Desktop/Battleship-Game/BattleShip/Battleship.Tests/obj/Debug/netcoreapp3.1/Battleship.Tests.csproj.CopyComplete
 /Users/reid/Desktop/Battleship-Game/BattleShip/Battleship.Tests/obj/Debug/netcoreapp3.1/Battleship.Tests.genruntimeconfig.cache
+/Users/reid/Desktop/Battleship-Game/Battleship.Tests/obj/Debug/netcoreapp3.1/Battleship.Tests.csprojAssemblyReference.cache
+/Users/reid/Desktop/Battleship-Game/Battleship.Tests/obj/Debug/netcoreapp3.1/Battleship.Tests.AssemblyInfoInputs.cache
+/Users/reid/Desktop/Battleship-Game/Battleship.Tests/obj/Debug/netcoreapp3.1/Battleship.Tests.AssemblyInfo.cs
+/Users/reid/Desktop/Battleship-Game/Battleship.Tests/obj/Debug/netcoreapp3.1/Battleship.Tests.csproj.CoreCompileInputs.cache
+/Users/reid/Desktop/Battleship-Game/Battleship.Tests/obj/Debug/netcoreapp3.1/Battleship.Tests.dll
+/Users/reid/Desktop/Battleship-Game/Battleship.Tests/obj/Debug/netcoreapp3.1/Battleship.Tests.pdb

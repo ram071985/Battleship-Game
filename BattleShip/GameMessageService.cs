@@ -26,6 +26,26 @@ namespace BattleShip
             Console.WriteLine();
         }
 
+        public void DisplayGameOverMessage()
+        {
+            Console.WriteLine("Missiles Depleted");
+            Console.WriteLine();
+            Console.WriteLine("GAME OVER");
+            Environment.Exit(0);
+        }
+
+        public void DisplayMissedMissileMessage()
+        {
+            Console.WriteLine("You missed the Battleship!");
+        }
+
+        public void DisplayMissileHitMessage(int howManyHitsLeft)
+        {
+            Console.WriteLine("You've hit the battleship!");
+            Console.WriteLine();
+            Console.WriteLine("Battleship will sink in " + howManyHitsLeft + " more hits");
+        }
+
         public int ReadPlayerRowInput()
         {
             Console.WriteLine("Choose a grid row number between 1 and 10");

@@ -14,32 +14,7 @@ namespace BattleShip
             _gameMessageService = gameMessageService;
         }
 
-        public void CalculateHit(int row, int column)
-        {
-
-            if (IsGameOverDueToDepletedMissiles())
-            {
-                Console.WriteLine("Missiles Depleted");
-                Console.WriteLine();
-                Console.WriteLine("GAME OVER");
-                Environment.Exit(0);
-            }
-            else if (IsBattleshipHit(row, column))
-            {
-                battleshipHits += 1;
-                int howManyHitsLeft = 5 - battleshipHits;
-                Console.WriteLine("You've hit the battleship!");
-                Console.WriteLine();
-                Console.WriteLine("Battleship will sink in " + howManyHitsLeft + " more hits");
-                _gameGrid = new GameGrid();
-                
-            }
-            else if(IsBattleshipHit(row, column) == false)
-            {
-                Console.WriteLine("You missed the Battleship!");
-
-            }
-        }
+  
 
         public void PlayerIsWinner()
         {

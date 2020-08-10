@@ -18,7 +18,23 @@ namespace BattleShip
                 gameLogic.roundNumber = i;
                 var row = gameMessageService.ReadPlayerRowInput();
                 var column = gameMessageService.ReadPlayerColumnInput();
-                gameLogic.CalculateHit(row, column);
+                
+                if (gameLogic.IsGameOverDueToDepletedMissiles())
+                {
+                    gameMessageService.DisplayGameOverMessage();
+                }
+                else if (gameLogic.IsBattleshipHit(row, column))
+                {
+                    gameLogic.battleshipHits += 1;        
+                    gameMessageService.DisplayMissileHitMessage(5 - gameLogic.battleshipHits);
+                    gameGrid = new GameGrid();
+
+                }
+                else if (gameLogic.IsBattleshipHit(row, column) == false)
+                {
+
+                    gameMessageService.DisplayMissedMissileMessage();
+                }
                 gameLogic.PlayerIsWinner();
             }
         }
