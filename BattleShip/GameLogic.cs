@@ -5,13 +5,13 @@ namespace BattleShip
     {
         public int battleshipHits;
         private GameGrid _gameGrid;
-        private PlayerInput _playerInput;
+        private GameMessageService _gameMessageService;
         public int roundNumber;
 
-        public GameLogic(GameGrid gameGrid, PlayerInput playerInput)
+        public GameLogic(GameGrid gameGrid, GameMessageService gameMessageService)
         {
             _gameGrid = gameGrid;
-            _playerInput = playerInput;
+            _gameMessageService = gameMessageService;
         }
 
         public void CalculateHit(int row, int column)

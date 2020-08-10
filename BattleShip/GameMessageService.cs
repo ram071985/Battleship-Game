@@ -1,8 +1,30 @@
 ﻿using System;
 namespace BattleShip
 {
-    public class PlayerInput
+    public class GameMessageService
     {
+        public void DisplayWelcomeMessage()
+        {
+            Console.WriteLine("Welcome to Battleship!");
+            Console.WriteLine();
+            Console.WriteLine("You have 8 attempts to fire at the battleship on the grid.  5 hits will sink the battleship.");
+            Console.WriteLine();
+        }
+
+        public void DisplayRoundNumber(int roundNumber)
+        {
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Round " + roundNumber + " of 8");
+        }
+
+        public void DisplayMissileFireMessage()
+        {
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("FIRE!");
+            Console.WriteLine();
+        }
 
         public int ReadPlayerRowInput()
         {

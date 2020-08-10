@@ -1,9 +1,19 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{994E90CF-0AAF-4A7F-A7A8-0F47B11D3B8D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BattleShip/GameLogic.cs">
+    <Files>
+      <File FileName="BattleShip/Program.cs" Line="23" Column="39" />
+      <File FileName="BattleShip/GameLogic.cs" Line="8" Column="18" />
+      <File FileName="BattleShip/GameMessageService.cs" Line="11" Column="33" NotebookId="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BattleShip" expanded="True" selected="True" />
+          <Node name="BattleShip" expanded="True">
+            <Node name="BattleShip" expanded="True">
+              <Node name="GameLogic.cs" selected="True" />
+            </Node>
+            <Node name="Battleship.Tests" expanded="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>
@@ -11,9 +21,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint enabled="false" file="/Users/reid/Desktop/Battleship-Game/BattleShip/Program.cs" relfile="BattleShip/Program.cs" line="22" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.BattleShip PreferredExecutionTarget="MonoDevelop.Default" />
