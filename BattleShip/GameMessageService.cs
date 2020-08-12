@@ -46,6 +46,14 @@ namespace BattleShip
             Console.WriteLine("Battleship will sink in " + howManyHitsLeft + " more hits");
         }
 
+        public void DisplayWinnerMessage()
+        {
+            Console.WriteLine("CONGRATULATIONS! You've sunk the battleship!");
+            Console.WriteLine();
+            Console.WriteLine("You've Won The Game!");
+            Environment.Exit(0);
+        }
+
         public int ReadPlayerRowInput()
         {
             Console.WriteLine("Choose a grid row number between 1 and 10");

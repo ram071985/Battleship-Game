@@ -6,9 +6,9 @@ namespace BattleShip
     {
         static void Main(string[] args)
         {
-            var gameGrid = new GameGrid();
+            var battleship = new Battleship();
             var gameMessageService = new GameMessageService();
-            var gameLogic = new GameLogic(gameGrid, gameMessageService);
+            var gameLogic = new GameLogic();
 
             gameMessageService.DisplayWelcomeMessage();
 
@@ -23,19 +23,22 @@ namespace BattleShip
                 {
                     gameMessageService.DisplayGameOverMessage();
                 }
-                else if (gameLogic.IsBattleshipHit(row, column))
-                {
-                    gameLogic.battleshipHits += 1;        
-                    gameMessageService.DisplayMissileHitMessage(5 - gameLogic.battleshipHits);
-                    gameGrid = new GameGrid();
 
+                var battleShipIsHit = battleship.ShootMissile(row, column);
+
+                if (battleShipIsHit == true)
+                {    
+                    gameMessageService.DisplayMissileHitMessage(5 - battleship.Hits);
+                    battleship.ResetPosition();
                 }
-                else if (gameLogic.IsBattleshipHit(row, column) == false)
+                else
                 {
-
                     gameMessageService.DisplayMissedMissileMessage();
                 }
-                gameLogic.PlayerIsWinner();
+                if(battleship.IsSunk() == true)
+                {
+                    gameMessageService.DisplayWinnerMessage();
+                }
             }
         }
     }

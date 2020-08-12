@@ -24,7 +24,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/reid/Desktop/Battleship-Game/BattleShip/BattleShip.csproj": {
+                "projectPath": "/Users/reid/Desktop/Battleship-Game/BattleShip/BattleShip.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -49,6 +53,70 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.16.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/reid/Desktop/Battleship-Game/BattleShip/BattleShip.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/reid/Desktop/Battleship-Game/BattleShip/BattleShip.csproj",
+        "projectName": "BattleShip",
+        "projectPath": "/Users/reid/Desktop/Battleship-Game/BattleShip/BattleShip.csproj",
+        "packagesPath": "/Users/reid/.nuget/packages/",
+        "outputPath": "/Users/reid/Desktop/Battleship-Game/BattleShip/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/reid/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit.Console": {
+              "target": "Package",
+              "version": "[3.11.1, )"
+            },
+            "NUnit.ConsoleRunner": {
+              "target": "Package",
+              "version": "[3.11.1, )"
             }
           },
           "imports": [
