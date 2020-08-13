@@ -43,9 +43,27 @@ namespace Battleship.Tests
         [Test]
         public void should_return_true_for_is_sunk()
         {
-            var hits = 5;
-            var result = _battleship.IsSunk(hits);
+            _battleship.ShootMissile(_battleship.Row, _battleship.Column);
+            _battleship.ShootMissile(_battleship.Row, _battleship.Column);
+            _battleship.ShootMissile(_battleship.Row, _battleship.Column);
+            _battleship.ShootMissile(_battleship.Row, _battleship.Column);
+            _battleship.ShootMissile(_battleship.Row, _battleship.Column);
+
+            var result = _battleship.IsSunk();
             Assert.IsTrue(result);
+        }
+
+        [Test]
+        public void should_return_false_for_is_sunk()
+        {
+            _battleship.ShootMissile(_battleship.Row - 1, _battleship.Column);
+            _battleship.ShootMissile(_battleship.Row -1 , _battleship.Column);
+            _battleship.ShootMissile(_battleship.Row - 1, _battleship.Column);
+            _battleship.ShootMissile(_battleship.Row - 1, _battleship.Column);
+            _battleship.ShootMissile(_battleship.Row - 1, _battleship.Column);
+
+            var result = _battleship.IsSunk();
+            Assert.IsFalse(result);
         }
 
     }

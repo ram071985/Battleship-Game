@@ -23,7 +23,7 @@ namespace BattleShip
             return isHit;
         }
 
-        public bool IsSunk(int hits)
+        public bool IsSunk()
         {
             return Hits >= 5;
         }

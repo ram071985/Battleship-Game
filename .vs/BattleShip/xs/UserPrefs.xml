@@ -1,22 +1,21 @@
 ﻿<Properties StartupConfiguration="{994E90CF-0AAF-4A7F-A7A8-0F47B11D3B8D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BattleShip/Battleship.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Battleship.Tests/BattleshipTests.cs">
     <Files>
-      <File FileName="BattleShip/Program.cs" Line="27" Column="76" />
-      <File FileName="Battleship.Tests/BattleshipGridTest.cs" Line="1" Column="1" />
-      <File FileName="Battleship.Tests/GameLogicTests.cs" Line="14" Column="53" />
-      <File FileName="BattleShip/GameMessageService.cs" Line="70" Column="1" NotebookId="1" />
-      <File FileName="BattleShip/GameLogic.cs" Line="22" Column="30" NotebookId="1" />
-      <File FileName="BattleShip/GameGrid.cs" Line="24" Column="30" NotebookId="1" />
+      <File FileName="BattleShip/Program.cs" Line="38" Column="48" />
+      <File FileName="Battleship.Tests/GameLogicTests.cs" Line="34" Column="21" />
+      <File FileName="Battleship.Tests/BattleshipTests.cs" Line="47" Column="45" />
+      <File FileName="BattleShip/GameMessageService.cs" Line="50" Column="1" NotebookId="1" />
+      <File FileName="BattleShip/GameLogic.cs" Line="12" Column="10" NotebookId="1" />
+      <File FileName="BattleShip/Battleship.cs" Line="28" Column="30" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BattleShip" expanded="True">
-            <Node name="BattleShip" expanded="True">
-              <Node name="Battleship.cs" selected="True" />
-            </Node>
+            <Node name="BattleShip" expanded="True" />
             <Node name="Battleship.Tests" expanded="True">
               <Node name="Dependencies" expanded="True" />
+              <Node name="BattleshipTests.cs" selected="True" />
             </Node>
           </Node>
         </State>
